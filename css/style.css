@@ -1,0 +1,14 @@
+
+*{
+    color: burlywood;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+  }
+
+  body{
+    background-image: url(https://img.freepik.com/free-vector/abstract-premium-black-gold-geometric-background_1017-24783.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1708560000&semt=ais);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+

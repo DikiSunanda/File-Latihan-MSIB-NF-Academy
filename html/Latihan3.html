@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Form</title>
+  </head>
+  <body>
+
+    <audio hidden autoplay loop>
+      <source src="./sound/sound.mp3">
+
+    </audio>
+
+    <form action="">
+      <table border="1" cellspacing="0" cellpadding="15px" align="center" width="70%">
+        <thead bgcolor="aqua">
+          <th colspan="2">Form Latihan</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td width="25%"><label for="Nama">Masukkan Nama :</label></td>
+            <td ><input type="text" size="50%" name="" id="Nama" placeholder="Masukkan Nama Anda" required/></td>
+          </tr>
+          <tr>
+            <td width="25%"><label for="Email">Masukkan Email :</label></td>
+            <td ><input type="email" size="50%" name="" id="Email" placeholder="Masukkan Email Anda" required></td>
+          </tr>
+          <tr>
+            <td><label for="">Jenis Kelamin</label></td>
+            <td>
+              <input type="radio" name="gender" value="L" checked>Laki - Laki &nbsp;
+              <input type="radio" name="gender" value="P">Perempuan
+            </td>
+          </tr>
+          <tr>
+            <td width="25%"><label for="Hobby">Hobby</label></td>
+            <td>
+              <input type="checkbox" name="hobby" id="Hobby" value="membaca">Membaca <br>
+              <input type="checkbox" name="hobby" id="Hobby" value="memancing">Memancing <br>
+              <input type="checkbox" name="hobby" id="Hobby" value="menggame">Menggame <br>
+              <input type="checkbox" name="hobby" id="Hobby" value="memasak">Memasak <br>
+              <input type="checkbox" name="hobby" id="Hobby" value="memarahi" checked>Memarahi <br>
+            </td>
+            <tr>
+              <td width="25%">
+                <label for="pendidikan">Pendidikan</label>
+              </td>
+              <td>
+                <select name="" id="pendidikan" \>
+                  <option value="">-- Pilih Pendidikan --</option>
+                  <option value="sma">SMK</option>
+                  <option value="d3">D3</option>
+                  <option value="s1">S1</option>
+                  <option value="s2">S2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td width="25"><label for="alamat">Alamat :</label></td>
+              <td>
+                <textarea name="" id="alamat" cols="100" rows="20" placeholder="Alamat Anda"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="text">Disable</label></td>
+              <td>
+                <input type="text" name="" id="" disabled>
+              </td>
+            </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="2">
+              <input type="submit" value="Kirim" />&nbsp;&nbsp
+              <input type="reset" value="Batal" />
+            </th>
+          </tr>
+        </tfoot>
+      </table>
+    </form>
+  </body>
+</html>
