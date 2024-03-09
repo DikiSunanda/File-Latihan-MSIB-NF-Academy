@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <marquee behavior="alternate" onmouseover="stop()" onmouseout="start()" direction="">
+        Belajar Pengkondisian
+    </marquee>
+
+    <script>
+
+        let nama = 'siti aminah';
+        let jabatan = 'manager';
+        let gaji;
+
+        if(jabatan == 'manager')gaji = 100000;
+        else if(jabatan == 'aspri')gaji = 50000;
+        else if(jabatan == 'sekertariis')gaji = 20000;
+        else gaji = 0;
+
+        document.write('Halo '+nama+ ' jabatan anda di PT Pengangguran Sukses adalah '+jabatan+' Gaji yang diperoleh permenit adalah '+gaji)
+
+    </script>
+</body>
+</html>

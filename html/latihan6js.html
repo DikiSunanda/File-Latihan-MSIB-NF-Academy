@@ -1,0 +1,14 @@
+<script>
+
+    let namaSiswa = prompt('Masukan nama anda : ');
+    let nilaiUjian = prompt('Masukan nilai anda : ');
+    let grade; 
+
+    if(nilaiUjian >= 75 && nilaiUjian <= 100) grade = ' Anda Lulus Dengan Keren';
+    else if(nilaiUjian <= 75 && nilaiUjian >= 60) grade = ' Anda Lulus !';
+    else if (nilaiUjian <= 60) grade = ' Anda Goblok Dan Tidak Lulus !';
+    else (grade = " Data Yang Anda Masukkan Salah");
+
+    alert('Halo '+namaSiswa+grade);
+
+</script>

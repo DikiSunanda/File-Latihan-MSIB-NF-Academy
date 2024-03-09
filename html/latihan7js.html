@@ -1,0 +1,22 @@
+<script>
+
+let namaSiswa = prompt('Masukkan Nama Anda : ')
+let grade = prompt('Masukkan Grade Anda')
+let predikat;
+
+switch(grade){
+    case 'A': predikat = 'Sangat Memuaskan';
+    break;
+    case 'B': predikat = 'Memuaskan';
+    break;
+    case 'C': predikat = 'Cukup Memuaskan';
+    break;
+    case 'D': predikat = 'Tidak Memuaskan';
+    break;
+    case 'E': predikat = 'Terpuaskan';
+    break;
+}
+
+alert('Halo '+namaSiswa+ ' Predikat anda dalam ujian kali ini adalah '+predikat);
+
+</script>
