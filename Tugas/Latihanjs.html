@@ -1,0 +1,74 @@
+<script>
+    let hari = new Date().getDay()
+    let week = new Date().getMonth()
+    let tanggal = new Date().getDate()
+    let tahun = new Date().getFullYear()
+
+    // let tanggal
+    let hariIni
+    let weekIni
+
+    if(hari == '0') hariIni = 'Minggu'
+    else if(hari == '1') hariIni = 'Senin'
+    else if(hari == '2') hariIni = 'Selasa'
+    else if(hari == '3') hariIni = 'Rabu'
+    else if(hari == '4') hariIni = 'Kamis'
+    else if(hari == '5') hariIni = 'Jumat'
+    else if(hari == '6') hariIni = 'Sabtu'
+    else ""
+
+
+    switch(week){
+        case 0: weekIni = 'Januari'
+        break
+        case 1 : weekIni = 'Februari'
+        break
+        case 2 : weekIni = 'Maret'
+        break
+        case 3 : weekIni = 'April'
+        break
+        case 4: weekIni = 'Mei'
+        break
+        case 5: weekIni = 'Juni'
+        break
+        case 6: weekIni = 'Juli'
+        break
+        case 7: weekIni = 'Agustus'
+        break
+        case 8: weekIni = 'September'
+        break
+        case 9: weekIni = 'Oktober'
+        break
+        case 10: weekIni = 'November'
+        break
+        case 11: weekIni = 'Desember'
+        break
+        default:'Kuma Maneh'
+        break
+    }
+
+
+
+   let sekarangWaktu = (`Sekarang Adalah Hari ${hariIni} Tanggal ${tanggal} ${weekIni} Tahun ${tahun}`)
+
+   for (let i = 0; i<= 100; i++){
+        document.write(sekarangWaktu)
+   }
+
+
+  let harry = ['Senin','Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu']
+
+//   for(let i = 0; i < harry.length; i++){
+//         console.log('Sekarang Adalah Hari '+harry[i])
+//   }
+ let i = 0
+//   while(i < harry.length){
+//         i++
+//         console.log(harry[i])
+//   }
+
+do{
+    i++
+    console.log(harry[i])
+}while(i  < harry.length)
+</script>
