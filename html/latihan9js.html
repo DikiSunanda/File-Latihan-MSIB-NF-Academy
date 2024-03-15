@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan DOM</title>
+</head>
+<body>
+    
+<h1 id = 'isi'></h1>
+<p id="warna"></p>
+    <script>
+        alert('Monyet Goblok')
+        // Menentukan elemen di html menggunakan innerHTML dengan mencari id
+        //Contoh pembuatan DOM dengan element id
+        document.getElementById('isi').innerHTML = 'WishDOM'
+        document.getElementById('warna').innerHTML = 'Warna Biru'
+
+
+        //Proses pembuatan element dan tag dalam javascript
+        let div = document.createElement('div') //Meembuat ELement Div
+        div.id = 'content' //Membuat id dari div
+        div.innerHTML = '<p>Contoh Create Element</p>'//Memasukan string kedalam div
+        document.body.appendChild(div)//Memunculkan div kedalam body
+
+
+        //Proses pewarnaan
+        document.getElementById('warna').style.color = 'red'
+    </script>
+    <script>
+        //Membuat function void --> Function yang tidak mengembalikan nilai atau tidak menampilkan proses
+        function salam(nama){ //Function dengan nama salam dan parameter nama
+            document.write(`Apa kabar ${nama} ? <br>`)
+        }
+        let siswa = 'Fawaz';
+        salam(siswa)
+    </script>
+</body>
+</html>
