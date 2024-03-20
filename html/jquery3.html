@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+    <link rel="stylesheet" href="../css/style1.css">
+</head>
+<body>
+    <h2>Letakan kurssor ke masing masing gambar</h2>
+    <div id="div1">
+        Gita JKT48
+    </div>
+    <div id="div2">
+        Gita JKT48
+    </div>
+    <div id="div3">
+        Gita JKT48
+    </div>
+    
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+        $('document').ready(function(){
+            $('#div1').mouseover(function(){
+                $(this).css({
+                    'background': "url('https://selebriti.co.id/wp-content/uploads/2023/10/gita-jkt48.png')",
+                    'background-size': 'cover',
+                    'background-repeat': 'no-repeat'
+            });
+            $('#div1').mouseout(function(){
+                $(this).css({
+                    'background': "url('https://th.bing.com/th/id/OIP.-ajm4ZbHkXAVU7eYL-2ycwHaEK?rs=1&pid=ImgDetMain')",
+                    'background-size': 'cover',
+                    'background-repeat': 'no-repeat'
+                });
+            });
+        });
+
+
+        $('#div2').mouseover(function(){
+                $(this).css({
+                    'background': "url('https://i.pinimg.com/736x/60/e5/bd/60e5bde4d284040db30b1bbb89cbd362.jpg')",
+                    'background-size': 'cover',
+                    'background-repeat': 'no-repeat'
+            });
+            $('#div2').mouseout(function(){
+                $(this).css({
+                    'background': "url('https://i.ytimg.com/vi/H0Raaeem17w/maxresdefault.jpg')",
+                    'background-size': 'cover',
+                    'background-repeat': 'no-repeat'
+                });
+            });
+
+            
+        });
+
+
+        $('#div3').mouseover(function(){
+                $(this).css({
+                    'background': "url('https://i.pinimg.com/originals/d1/f0/4f/d1f04f58c9d2af2d969c2eb53316781b.jpg')",
+                    'background-size': 'cover',
+                    'background-repeat': 'no-repeat'
+            });
+            $('#div3').mouseout(function(){
+                $(this).css({
+                    'background': "url('https://t-2.tstatic.net/tribunnewswiki/foto/bank/images/Gita-JKT48.jpg')",
+                    'background-size': 'cover',
+                    'background-repeat': 'no-repeat'
+                });
+            });
+
+            
+        });
+
+    });
+    </script>
+</body>
+</html>

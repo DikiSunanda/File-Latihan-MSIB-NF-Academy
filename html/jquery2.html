@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JQuery</title>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            //Deklarasi untuk selektor tag
+            $('input').click(function(){
+                alert("Selamat siang jing !");
+            });
+
+            //Deklarasi untuk selektor class
+            $('.tes').css({
+                "background-color" : "Orange",
+                "text-align" : "center"
+            });
+
+            //Deklarasi pemanggilan selector id
+            $('#test').css({
+                "background-color" : "blue",
+                "text-align" : "center"
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="submit" value="salam">
+    <p class="tes">ini warna the jak</p>
+    <p id="test">ini warna bobotoh</p>
+</body>
+</html>

@@ -25,7 +25,9 @@ let hargaKotor = harga * jumlah;
 let diskon;
 if (produk == 'Kulkas' && jumlah >= 3)diskon = 0.3 * hargaKotor;
 else if (produk == 'AC' && jumlah >= 3)diskon = 0.2 * hargaKotor;
-else dison = 0.1 * hargaKotor;
+else diskon = 0.1 * hargaKotor;
+
+let hargaBayar = hargaKotor - diskon;
 
 
 swal(`
@@ -33,6 +35,9 @@ swal(`
     Produk yang dibeli : ${produk}
     Harga produk : ${harga}
     Jumlah produk yang dibeli :${jumlah}
+    Total Harga = ${hargaKotor}
+    Diskon = ${diskon} 
+    Harga yang harus dibayar : ${hargaBayar}
 `);
 
 }
